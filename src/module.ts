@@ -10,45 +10,45 @@ import { PanelOptionCode } from './PanelOptionCode';
 
 export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setPanelOptions((builder) => {
   return builder
-    .addCustomEditor({
-      id: 'data',
-      path: 'data',
-      name: 'Data',
-      description: 'Data of the chart',
-      editor: PanelOptionCode,
-      category: ['Plotly'],
-      settings: {
-        language: 'json',
-        initValue: defaults.data,
-      },
-      defaultValue: null, //defaults.data,
-    })
-    .addCustomEditor({
-      id: 'layout',
-      path: 'layout',
-      name: 'Layout',
-      description: 'Layout of the chart',
-      editor: PanelOptionCode,
-      category: ['Plotly'],
-      settings: {
-        language: 'json',
-        initValue: defaults.layout,
-      },
-      defaultValue: null, //defaults.layout,
-    })
-    .addCustomEditor({
-      id: 'config',
-      path: 'config',
-      name: 'Configuration',
-      description: 'Configuration of the chart',
-      editor: PanelOptionCode,
-      category: ['Plotly'],
-      settings: {
-        language: 'json',
-        initValue: defaults.config,
-      },
-      defaultValue: null, //defaults.config,
-    })
+    // .addCustomEditor({
+    //   id: 'data',
+    //   path: 'data',
+    //   name: 'Data',
+    //   description: 'Data of the chart',
+    //   editor: PanelOptionCode,
+    //   category: ['Plotly'],
+    //   settings: {
+    //     language: 'json',
+    //     initValue: defaults.data,
+    //   },
+    //   defaultValue: null, //defaults.data,
+    // })
+    // .addCustomEditor({
+    //   id: 'layout',
+    //   path: 'layout',
+    //   name: 'Layout',
+    //   description: 'Layout of the chart',
+    //   editor: PanelOptionCode,
+    //   category: ['Plotly'],
+    //   settings: {
+    //     language: 'json',
+    //     initValue: defaults.layout,
+    //   },
+    //   defaultValue: null, //defaults.layout,
+    // })
+    // .addCustomEditor({
+    //   id: 'config',
+    //   path: 'config',
+    //   name: 'Configuration',
+    //   description: 'Configuration of the chart',
+    //   editor: PanelOptionCode,
+    //   category: ['Plotly'],
+    //   settings: {
+    //     language: 'json',
+    //     initValue: defaults.config,
+    //   },
+    //   defaultValue: null, //defaults.config,
+    // })
     .addCustomEditor({
       id: 'script',
       path: 'script',

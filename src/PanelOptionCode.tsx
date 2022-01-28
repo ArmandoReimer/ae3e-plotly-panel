@@ -14,7 +14,7 @@ export const PanelOptionCode: React.FC<Props> = ({ value, item, onChange }) => {
   const theme = useTheme();
   return (
     <AutoSizer
-      disableHeight
+      //disableHeight
       className={css`
         margin-bottom: ${theme.spacing.sm};
       `}
